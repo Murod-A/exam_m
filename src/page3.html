@@ -4,10 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/fontawesome-free-6.7.2-web/css/all.css">
+    <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    <nav>
-        <img src="./" alt="">
+    <nav class="flex flex-row justify-between items-center p-2 px-8 text-[14px] bg-[#F0F6F9]">
+
+        <img src="./logo.png" alt="">
+
+        <div class=" hidden xl:flex flex-col">
+            <p class="text-[#00578A] font-semibold">8 (495) 926-06-03</p>
+            <div class="flex flex-row justify-start items-center gap-3">
+                <i class="fa-brands fa-square-whatsapp" style="color: #25d366;"></i>
+                <p>Whatsapp</p>
+            </div>
+        </div>
+
+        <div class="hidden xl:flex flex-col text-[#4F4F4F]">
+            <p>info@gormedcentre.ru</p>
+            <p>Заказать звонок</pss=>
+        </div>
+
+        <div class="hidden xl:flex flex-col text-[#4F4F4F]">
+            <p>г. Мытищи,</p>
+            <p>ул.Рождественская, д.7</pss=>
+        </div>
+
+        <div class="hidden xl:flex flex-col text-[#4F4F4F]">
+            <p>Ежедневно</p>
+            <p>с 9.00 до 21.00</pss=>
+        </div>
+
+        <div class="hidden xl:flex flex-row gap-3">
+            <div class="text-[#00C6BF] rounded-md">
+                <img src="./search.png" alt="">
+            </div>
+
+            <button class="bg-[#E3EFF5] text-[#00578A] rounded-md px-10 font-bold">Личный кабинет</button>
+        </div>
+
+        <div class="flex flex-row justify-between items-center gap-3 xl:hidden">
+        <i class="fa-solid fa-phone-flip" style="color: #4f4f4f; "></i>
+        <p class="text-[#7F8D94] ml-5">Меню</p>
+        <img  src="./burger.png" alt="">
+        </div>
+        
     </nav>
+
+
+<div class="bg-[#F0F6F9] py-3">
+    <nav class="hidden xl:flex justify-between items-center p-2 px-8 text-[14px] text-[#141414] bg-white mx-6 shadow-md rounded-md">
+        <div class="flex flex-row justify-between items-center font-semibold gap-6">
+            <select name="direction" id=""> 
+                <option value="">Направления</option>
+                <option value="">Напр 1</option>
+                <option value="">Напр 2</option>
+                <option value="">Напр 3</option>
+                <option value="">Напр 4</option>
+                <option value="">Напр 5</option>
+
+            </select>
+
+            <p>Услуги</p>
+            <p>Врачи</p>
+            <p>Отзывы</p>
+            <p>Акции</p>
+
+            <select   name="direction" id="">
+                <option value="" selected>О центре</option>
+                <option value="">Структура</option>
+                <option value="">Команда</option>
+                <option value="">Вакансии</option>
+            </select>
+
+            <p>Детство</p>
+            <p>Контакты</p>
+
+        </div>
+
+        <div class="flex flex-row items-center gap-6">
+            <div class="flex flex-row items-center gap-3">
+                <i class="fa-solid fa-glasses" style="color: #141414;"></i>
+                <p>Версия для слабовидящих</p>
+            </div>
+
+            <button class="bg-[#00578A] text-white rounded-md py-2 text-center flex items-center px-7 shadow-md">Запись на приём</button>
+        </div>
+    
+
+    </nav>
+
+</div>
+
+<section>
+    <div class="pl-[30px] lg:flex lg:justify-between lg:items-cente ">
+        <p class="font-semibold text-[30px] lg:text-[48px]">Популярные услуги</p>
+        <div class="my-[20px]">
+            <button class="w-[50px] h-[50px] text-[22px] rounded-full font-bold lg:w-[60px] lg:h-[60px] bg-[#EAF6FF] text-[#017CC1]"><</button>
+            <button class="w-[50px] h-[50px] text-[22px] rounded-full font-bold lg:w-[60px] lg:h-[60px] bg-[#017CC1] text-[#EAF6FF]">></button>
+        </div>
+    </div>
+
+    <div class="flex lg:justify-between px-[50px]">
+        <img src="/01.png" alt="" class="">
+        <img src="/02-hover.png" alt="" class="hidden lg:block">
+        <img src="/03.png" alt="" class="hidden lg:block">
+        <img src="/04.png" alt="" class="hidden lg:block">
+    </div>
+</section>
+
+<section class="py-[60px]">
+    <div class="pl-[40px] lg:flex lg:justify-between lg:items-center">
+        <div><p class="font-semibold text-[30px] lg:text-[48px]">Врачи медицинского <br>центра</p></div>
+        <div class="my-[20px]">
+            <button class="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] text-[22px] rounded-full font-bold bg-[#EAF6FF] text-[#017CC1]"><</button>
+            <button class="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] text-[22px] rounded-full font-bold bg-[#017CC1] text-[#EAF6FF]">></button>
+        </div>
+    </div>
+
+    <div class="flex lg:justify-between lg:items-center w-[100%] mt-[30px] px-[40px]">
+        <div class="flex flex-col gap-[15px] ">
+            <img src="/photo.png" alt="">
+            <p class="text-[#017CC1] text-[22px]">Крятов Андрей</p>
+            <p class="text-[18px]">Главный врач, уролог, андролог</p>
+        </div>
+        <div class="hidden lg:flex flex-col gap-[15px]">
+            <img src="/photo (1).png" alt="">
+            <p class="text-[#017CC1] text-[22px]">Савина Наталья</p>
+            <p class="text-[18px]">Врач-невролог</p>
+        </div>
+        <div class="hidden lg:flex flex-col gap-[15px]">
+            <img src="/photo (2).png" alt="">
+            <p class="text-[#017CC1] text-[22px]">Зотова Гюзяль</p>
+            <p class="text-[18px]">Врач-терапевт</p>
+        </div>
+        <div class="hidden lg:flex flex-col gap-[15px]">
+            <img src="/photo (3).png" alt="">
+            <p class="text-[#017CC1] text-[22px]">Николаeва Оксана</p>
+            <p class="text-[18px]">Врач-терапевт</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-[60px]">
+    <div class="pl-[30px] lg:flex lg:justify-between lg:items-center">
+        <p class="font-semibold text-[30px] lg:text-[48px]">Отзывы пациентов</p>
+        <div class="my-[20px]">
+            <button class="w-[50px] h-[50px] text-[22px] rounded-full lg:w-[60px] lg:h-[60px] font-bold bg-[#EAF6FF] text-[#017CC1]"><</button>
+            <button class="w-[50px] h-[50px] text-[22px] rounded-full lg:w-[60px] lg:h-[60px] font-bold bg-[#017CC1] text-[#EAF6FF]">></button>
+        </div>
+    </div>
+
+    <div class="flex lg:justify-around lg:items-center">
+        <div class="flex flex-col gap-[10px] items-start lg:w-[45%]"><p class="font-semibold">Балушина Татьяна</p>
+            <p>18 апреля 2022</p>
+            <img src="/Stars.png" alt="">
+            <p class="font-semibold">Попала к Татьяне Ивановне спонтанно. Очень довольна приёмом и проведением ультразвуковой диагностики. Спасибо Наталье Ивановне за внимательное отношение к пациентам! При возникнвении проблем теперь только к ней!</p>
+            <button class="border-solid border-[1.5px] rounded-xl border-[#017CC1] w-[200px] h-[45px]">Подробнее</button>
+            <p class="text-[#017CC1]">Врач: Савина Наталья Владимировна</p></div>
+
+            <div class="pl-[30px] hidden lg:flex flex-col gap-[10px] items-start lg:w-[45%]"><p class="font-semibold">Балушина Татьяна</p>
+                <p>18 апреля 2022</p>
+                <img src="/Stars.png" alt="">
+                <p class="font-semibold">Попала к Татьяне Ивановне спонтанно. Очень довольна приёмом и проведением ультразвуковой диагностики. Спасибо Наталье Ивановне за внимательное отношение к пациентам! При возникнвении проблем теперь только к ней!</p>
+                <button class="border-solid border-[1.5px] rounded-xl border-[#017CC1] w-[200px] h-[45px]">Подробнее</button>
+                <p class="text-[#017CC1]">Врач: Савина Наталья Владимировна</p></div>
+    </div>
+</section>
+
+<div class="mx-5 " >
+    <p class="text-[34px] font-semibold xl:text-[48px]">Как нас найти</p>
+    <img class="my-5 rounded-xl h-[492px] object-cover" src="./image (4).png" alt="">
+    
+</div>
+
+<div class="mx-5 bg-[linear-gradient(to_right,#02B0C5,#0074B8)]">
+
+</div>
+
 </body>
 </html>
